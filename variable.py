@@ -40,3 +40,10 @@ python_description = [
 list_example = [1, "+", 2, "="]
 
 print(exemple)
+#변할 수 있는 데이터는 key 값으로 사용불가능
+dict_exemple ={
+    1: 'value 1'
+     'a' :'value a'
+
+}
+print(dict_exemple[1])
