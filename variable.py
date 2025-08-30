@@ -38,7 +38,23 @@ print(len(x)-1)
 x = { 'a':1, 'b':2} #key;value 탐색같은 느낌
 print(x)
 print(x['a'])
+print(type(x))
 
+x['c'] = 10
+
+print(x)
+
+print(x['c'])
+
+
+del x['a']
+print(x)
+
+print(x.keys()) #특정 키값만 제거하기
+print(x.values())
+print(x.items())
+
+print(x.clear()) #딕셔너리 전체 지우기
 x ={ 'a':[1,2,3],'b':2}
 print(x)
 
@@ -68,8 +84,6 @@ list_example = [1, "+", 2, "="]
 print(exemple)
 #변할 수 있는 데이터는 key 값으로 사용불가능
 dict_exemple ={
-    1: 'value 1'
-     'a' :'value a'
-
-}
+    1: 'value 1'}
+    ['a' :'value a']
 print(dict_exemple[1])
