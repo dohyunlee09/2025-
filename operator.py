@@ -28,6 +28,12 @@ print("x // y :" ,z)
 z = x ** y #제곱
 print("x ** y :" ,z)
 
+z = x % y #제곱
+print("x % y :" ,z)
+
+z =5 + x * 3 #곱셈의 우선순위가 더 높음
+print("(5+x * 3 :", z)
+
 str_x = "hello"
 str_y = ("python")
 
@@ -70,3 +76,4 @@ print("3합 6 :", total_score )
 #과학 영재반
 can_apply_class_for_the_gifted =report_card["물리"] ==1 or report_card["화학"] == 1 or report_card["수학"]
 print("영재반 지원가능여부 :" , can_apply_class_for_the_gifted)
+
