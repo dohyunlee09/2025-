@@ -21,7 +21,7 @@ z = x -y
 print("x - y :" ,z)
 z = x * y # 곱셈
 print("x * y :" ,z)
-z = x  /y #나눗셈
+z = x /y #나눗셈
 print("x / y :" ,z)
 z = x // y  #나머지
 print("x // y :" ,z)
@@ -39,4 +39,15 @@ print("str_x + str_y:" , str_z)
 str_z = str_x * 2
 print(str_x * 2:" ,str_z)
 
+
+delayed_effect_skill_a = "" #snake_case
+
+array_x = [12314,12345]
+array_Y = [124344,125355]
+
+array_z = array_x + array_y
+print("array_x + array_y :" , array_z)
+
+array_z = array_x * array_y[0] #해당 인덱스에 있는 요소가 정수형일때만 가능
+print("array_x * array_y[0] :" , array_z)
 
