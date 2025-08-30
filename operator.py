@@ -23,12 +23,12 @@ z = x * y # 곱셈
 print("x * y :" ,z)
 z = x /y #나눗셈
 print("x / y :" ,z)
-z = x // y  #나머지
+z = x // y  #제곱
 print("x // y :" ,z)
-z = x ** y #제곱
+z = x ** y #나머지
 print("x ** y :" ,z)
 
-z = x % y #제곱
+z = x % y #몫 구하기
 print("x % y :" ,z)
 
 z =5 + x * 3 #곱셈의 우선순위가 더 높음
