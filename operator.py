@@ -35,7 +35,7 @@ z =5 + x * 3 #곱셈의 우선순위가 더 높음
 print("(5+x * 3 :", z)
 
 str_x = "hello"
-str_y = ("python")
+str_y = "python"
 
 str_z =str_x + str_y
 print("str_x + str_y:" , str_z)
@@ -43,15 +43,15 @@ print("str_x + str_y:" , str_z)
 # unsupported operand type(s) for -: 'str' and 'str'
 
 str_z = str_x * 2
-print(str_x * 2:" ,str_z)
+print("str_x * 2:",str_z)
 
 
 delayed_effect_skill_a = "" #snake_case
 
 array_x = [12314,12345]
-array_Y = [124344,125355]
+array_y = [124344,125355]
 
-array_z = array_x + array_y
+array_z =(array_x  + array_y)
 print("array_x + array_y :" , array_z)
 
 array_z = array_x * array_y[0] #해당 인덱스에 있는 요소가 정수형일때만 가능
@@ -63,7 +63,7 @@ report_card = {
     "영어":6 ,
     "물리":1 ,
     "화학":2 ,
-    "생명과학" 1,
+    "생명과학":1,
 }
 
 can_apply = report_card["국어"] < 3 and report_card["수학"] < 3 and report_card["영어"] < 3
