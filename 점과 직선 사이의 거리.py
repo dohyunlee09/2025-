@@ -6,6 +6,5 @@ point = (a,b)
 print(point)
 
 def compute(x):
-    y=b/a*x
+    y=b*x/a
     return y
-
