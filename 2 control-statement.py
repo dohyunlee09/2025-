@@ -40,7 +40,7 @@ while list[-1] <= input_number:
     print(list[-1])
     list.append(list[-1] + list[-2])
 
-ptint("피보나치수열 without list")
+print("피보나치수열 without list")
 a=1
 b=1
 c=1
