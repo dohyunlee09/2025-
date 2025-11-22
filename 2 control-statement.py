@@ -74,7 +74,7 @@ test = [{ 'answer' : [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]},
 
 a =         [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]
 correct_answer = [1 , 5, 2 ,4, 5 , 3, 1, 2, 3,4]
-def print_ziptype():
+def print_fortype():
     first_score = 0
     for (student,correct) in zip(a,correct_answer):
         print(student , '/' , correct)
@@ -83,15 +83,15 @@ def print_ziptype():
 
     print(first_score
                   )
+def print_fortype2():
+    first_score = 100
+    for (student,correct) in zip(a,correct_answer):
+        print(student , '/' , correct)
+        if student != correct:
+            first_score = first_score - 10
 
-first_score = 100
-for (student,correct) in zip(a,correct_answer):
-    print(student , '/' , correct)
-    if student != correct:
-        first_score = first_score - 10
-
-print(first_score)
-#100에서 10씩 뺴는방법
+    print(first_score)
+    #100에서 10씩 뺴는방법
 
 
 
