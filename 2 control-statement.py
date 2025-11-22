@@ -116,34 +116,42 @@ correct_answer = correct_answer = {
 def print_fortype(student_answer,correct_answer):
     first_score = 0
     for (student,correct) in zip(student_answer,correct_answer):
-        print(student , '/' , correct)
+        #print(student , '/' , correct)
         if student == correct:
             first_score = first_score+10 #여기에 있어요
 
-    print(first_score)
+    #print(first_score)
     return first_score
 def print_fortype2():
     first_score = 100
     for (student,correct) in zip(staudent_answer,correct_answer):
-        print(student , '/' , correct)
+        #print(student , '/' , correct)
         if student != correct:
             first_score = first_score - 10
 
-    print(first_score)
+    #print(first_score)
     #100에서 10씩 뺴는방법
 
+
 for student in test:
+    if student['name'] =='ccc':
+        continue
 
-    for student in test:
-        math_score = print_fortype(student['math'], correct_answer['math'])
-        korean_score = print_fortype(student['korean'], correct_answer['korean'])
-        english_score = print_fortype(student['english'], correct_answer['english'])
-        science_score = print_fortype(student['science'], correct_answer['science'])
 
-        print("수학점수:", math_score)
-        print("국어점수:", korean_score)
-        print("영어점수:", english_score)
-        print("과학점수:", science_score)
+    print("학생", student['name'], "==================")
+
+
+    math_score = print_fortype(student['math'], correct_answer['math'])
+    korean_score = print_fortype(student['korean'], correct_answer['korean'])
+    english_score = print_fortype(student['english'], correct_answer['english'])
+    science_score = print_fortype(student['science'], correct_answer['science'])
+
+    print("수학점수:", math_score)
+    print("국어점수:", korean_score)
+    print("영어점수:", english_score)
+    print("과학점수:", science_score)
+
+
 
 
 
