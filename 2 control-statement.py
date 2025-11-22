@@ -49,8 +49,53 @@ def print_pibonacci_type2():
     while c <= input_number:
         print(c)
         c= a+b
-       a = b
+        a = b
         b = c
 
 #함수 호출 방법
 #repeat_function()
+def print_arr_type():
+    arr =  ['blue valentine','all day project','take me to the moon','piano man']
+
+    for i in arr:
+        print(i)
+#arr타입 함수호출로 주석 대체
+
+#수학
+test = [{ 'answer' : [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]},
+{ 'answer' : [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]},
+{ 'answer' : [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]},
+{ 'answer' : [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]},
+{ 'answer' : [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]},
+{ 'answer' : [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]},
+{ 'answer' : [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]}]
+
+
+
+a =         [1 , 3, 2 ,4, 5 , 3, 1, 2, 3,4]
+correct_answer = [1 , 5, 2 ,4, 5 , 3, 1, 2, 3,4]
+def print_ziptype():
+    first_score = 0
+    for (student,correct) in zip(a,correct_answer):
+        print(student , '/' , correct)
+        if student == correct:
+            first_score = first_score+10 #여기에 있어요
+
+    print(first_score
+                  )
+
+first_score = 100
+for (student,correct) in zip(a,correct_answer):
+    print(student , '/' , correct)
+    if student != correct:
+        first_score = first_score - 10
+
+print(first_score)
+#100에서 10씩 뺴는방법
+
+
+
+
+
+
+
