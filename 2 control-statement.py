@@ -49,5 +49,8 @@ def print_pibonacci_type2():
     while c <= input_number:
         print(c)
         c= a+b
-        a = b
+       a = b
         b = c
+
+#함수 호출 방법
+#repeat_function()
