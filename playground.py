@@ -29,24 +29,75 @@
 
     #print_times_table(int(user_input))
 #test
+import time
 import random
 
+
 def updown():
+    # random.randrange ( n, m )   n <= result < m
+    print("WELCOME TO UP DOWN")
+    result = random.randrange(1, 100)
+    while True:
+            user_input = input("답을 입력하세요:")
+            x = int(user_input)
+
+            if x > result:
+                print("down")
+
+            if x < result:
+                print("up")
+
+            elif x == result:
+                print("종료합니다.")
+                break
 
 
-    result:random.randrange(1 , 100 )
+def quiz():
+    print("WELCOME TO QUIZ!")
+
+def stop_watch():
+    print("WELCOME TO UP STOPWATCH")
+    # random 초를 제공하면 ex) 7초
+    start = time.time()
+
 
 
 while True:
-    user_input=input("답을 입력하세요:")
-    x = int(user_input)
+    print('''
+    ================메뉴================
+    A. Up & Down 게임
+    B. 영어 낱말 맞추기
+    C. Stop watch 게임
+    Z. 프로그램 종료
+    ====================================
+    ''')
+    user_input = input("값을 입력하세요 : ")
 
-    if x > int(result):
-        print("down")
+    if user_input.lower() == "a":
+        updown()
 
-    elif x < int(result):
-        print("up")
+    elif user_input.lower() == "b":
+        quiz()
+    elif user_input.lower() == "c":
+        stop_watch()
+    elif user_input.lower() == "z":
+        break
 
-    else:
-        print("종료합니다.")
-    break
+
+def updown():
+    result=random.randrange(1 , 100 )
+
+
+    while True:
+        user_input=input("답을 입력하세요:")
+        x = int(user_input)
+
+        if x > result:
+            print("down")
+
+        elif x < result:
+            print("up")
+
+        else:
+            print("종료합니다.")
+        break
