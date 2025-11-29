@@ -59,6 +59,17 @@ def stop_watch():
     print("WELCOME TO UP STOPWATCH")
     # random 초를 제공하면 ex) 7초
     start = time.time()
+    print(start)
+    end = time.time()
+    if user_input("5"):
+        print(end)
+
+    if  6.7<= str(end - start) <=7.3:
+        print("성공입니다!!!")
+
+
+
+
 
 
 
@@ -83,21 +94,3 @@ while True:
     elif user_input.lower() == "z":
         break
 
-
-def updown():
-    result=random.randrange(1 , 100 )
-
-
-    while True:
-        user_input=input("답을 입력하세요:")
-        x = int(user_input)
-
-        if x > result:
-            print("down")
-
-        elif x < result:
-            print("up")
-
-        else:
-            print("종료합니다.")
-        break
