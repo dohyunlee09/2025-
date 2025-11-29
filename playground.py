@@ -32,20 +32,21 @@
 import random
 
 def updown():
-    result:random.randrange(1 , 100
 
-                            )
+
+    result:random.randrange(1 , 100 )
+
 
 while True:
-    user_input:input("답을 입력하세요:")
-     int(user_input)
+    user_input=input("답을 입력하세요:")
+    x = int(user_input)
 
-        if int(user_input) >random.randrange:
+    if x > int(result):
         print("down")
 
-        elif int(user_input) < random.randrange:
+    elif x < int(result):
         print("up")
 
-    if int(user_input) == random.randrange:
+    else:
         print("종료합니다.")
-        break
+    break
