@@ -55,16 +55,42 @@ def updown():
 def quiz():
     print("WELCOME TO QUIZ!")
 
+word_array = [
+    {'kr': '사과', 'en': 'apple'},
+    {'kr': '바나나', 'en': 'banana'},
+    {'kr': '포도', 'en': 'grape'},
+    {'kr': '멜론', 'en': 'melon'},
+    {'kr': '레몬', 'en': 'lemon'},
+    {'kr': '수박', 'en': 'watermelon'},
+    {'kr': '복숭아', 'en': 'peach'},
+    {'kr': '연필', 'en': 'pencil'},
+]
+
+def short_answer_quiz():
+    print("주관식 문제")
+
+    index = random.randrange(0,len(word_array))
+    word = word_array[index]
+    print(word["en"])
+    answer = input("뜻이 무엇일까요?")
+
+    if answer == word['kr']:
+        print("정답")
+    else:
+        print('오답! 정답은',word['kr'])
+
+
+
 def stop_watch():
     print("WELCOME TO UP STOPWATCH")
     # random 초를 제공하면 ex) 7초
     start = time.time()
     print(start)
     end = time.time()
-    if user_input("5"):
+    if user_input(" "):
         print(end)
 
-    if  6.7<= str(end - start) <=7.3:
+    if  0.5<= str(end - start) <=0.7:
         print("성공입니다!!!")
 
 
